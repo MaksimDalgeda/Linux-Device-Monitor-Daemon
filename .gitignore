@@ -1,0 +1,7 @@
+linux-monitor
+
+*.o
+
+logs/*.log
+
+.vscode/

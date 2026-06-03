@@ -1,0 +1,16 @@
+[Unit]
+Description=Linux Device Monitor Daemon
+After=network.target
+
+[Service]
+Type=simple
+
+WorkingDirectory=/opt/linux-monitor
+
+ExecStart=/opt/linux-monitor/linux-monitor
+
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
